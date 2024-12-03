@@ -1,0 +1,509 @@
+/* Parallax Effect */
+.parallax {
+    background-image: url('background.jpg');
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  
+  /* Testimonials Section Styling */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .quote-icon {
+    color: #ffc107;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  
+  .testimonial-card h5 {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .testimonial-card small {
+    color: #6c757d;
+  }
+  
+
+  
+  /* Gallery Section Styling */
+.gallery-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  /* Gallery Item */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Image Description */
+  .image-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover .image-description {
+    opacity: 1;
+  }
+  
+  /* Carousel Controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  
+  /* Portfolio Section Styling */
+.portfolio-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+ /* Section Title with Gradient Text */
+.text-gradient {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Card Hover and Image Scale Effect */
+.portfolio-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-container {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-img-container img {
+  transition: transform 0.5s ease;
+}
+
+.card-img-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Text Animation */
+@keyframes textBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animated-text {
+  animation: textBounce 2s infinite;
+}
+
+/* Smooth Fade-Up Animation for Card Body */
+.card-body {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(20px);
+}
+
+.portfolio-card:hover .card-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+  /* About Section Styling */
+.about-section {
+    background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+    padding: 80px 0;
+  }
+  
+  /* Profile Image Wrapper */
+  .profile-image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-image-wrapper:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Image Overlay */
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .profile-image-wrapper:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  /* Skills Section */
+  .skills .row {
+    margin-top: 20px;
+  }
+  
+  .skills h3 {
+    color: #1976d2;
+    font-weight: 700;
+  }
+  
+  .skills p {
+    color: #607d8b;
+    font-size: 0.9rem;
+  }
+  
+  /* About Section Text */
+  .about-section h2 {
+    font-weight: 700;
+    color: #0d47a1;
+  }
+  
+  .about-section p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #37474f;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-section .row {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  
+  
+
+
+  /* Parallax Home Section */
+#home {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape'); /* Replace with your desired image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  /* Overlay for better text visibility */
+  #home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    z-index: 1;
+  }
+  
+  /* Centered Content */
+  #home .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  #home p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Button Styling */
+  #home a {
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #home a:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+
+  
+
+  /* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background when scrolled */
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Change color on hover */
+  }
+  
+  /* Toggler Button */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' d='M3 7h24M3 15h24M3 23h24'/%3E%3C/svg%3E");
+  }
+  
+
+  
+  /* Parallax Section Styling */
+.parallax-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* Fallback overlay */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Background Image Styling */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75) blur(2px); /* Subtle blur for clarity */
+  transform: scale(1.1);
+  transition: transform 1.5s ease;
+}
+
+/* Zoom background on hover */
+.parallax-section:hover .background-img {
+  transform: scale(1.2); /* Slight zoom for depth */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border: 5px solid #fff;
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.profile-img:hover {
+  transform: scale(1.1); /* Scale on hover */
+}
+
+/* Text Animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animated-heading span {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end) 1s forwards, blink 0.6s step-end infinite;
+}
+
+.animated-subtext {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Smooth Button Hover Animation */
+.animated-button {
+  animation: fadeInUp 1s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.animated-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
